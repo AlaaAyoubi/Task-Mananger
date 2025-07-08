@@ -4,8 +4,48 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7e084ee0e22a74002e4de7a7202bc669",
+    "content-hash": "726d23b1f601a9233e03fb7d346a5d53",
     "packages": [
+        {
+            "name": "alaa/taskmanager",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/Alaa/TaskManager",
+                "reference": "62faae7a632c2e5dacd3fc9fb0d97278e18b1c2d"
+            },
+            "require": {
+                "illuminate/support": "^12.0",
+                "php": ">=8.1",
+                "spatie/laravel-permission": "^6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Alaa\\TaskManager\\Providers\\TaskManagerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Alaa\\TaskManager\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alaa",
+                    "email": "your-email@example.com"
+                }
+            ],
+            "description": "Team-based Task Management system for Laravel with roles, notifications, localization, and config publishing.",
+            "transport-options": {
+                "relative": true
+            }
+        },
         {
             "name": "brick/math",
             "version": "0.13.1",
@@ -9169,7 +9209,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "alaa/taskmanager": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
